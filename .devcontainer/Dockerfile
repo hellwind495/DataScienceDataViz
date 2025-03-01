@@ -12,4 +12,4 @@ RUN if [ -f "/tmp/conda-tmp/environment.yml" ]; then umask 0002 && /opt/conda/bi
 
 # Update Conda and install rdata from conda-forge channel
 RUN conda update -n base -c defaults conda && \
-    conda install -c conda-forge rdata -y
+    conda install -c conda-forge rdata shap -y
